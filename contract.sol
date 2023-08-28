@@ -5,6 +5,8 @@
 /**
  *
  *
+   https://X.com/DrewRoberts
+
    Contract features:
    3% buy tax in tokens burned
    10% sell tax in ETH sent to marketing w/ some sent to founder & lead dev
@@ -1164,7 +1166,7 @@ interface IUniswapV2Router02 is IUniswapV2Router01 {
     ) external;
 }
  
-contract army is ERC20, Ownable {
+contract rehab is ERC20, Ownable {
     using SafeMath for uint256;
  
     IUniswapV2Router02 public immutable uniswapV2Router;
@@ -1222,7 +1224,7 @@ contract army is ERC20, Ownable {
         address indexed oldWallet
     );
  
-    constructor() ERC20("Drew Roberts Army", "ARMY") {
+    constructor() ERC20("Web3 Needs Rehab", "REHAB") {
         uniswapV2Router = IUniswapV2Router02(
             0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D
         );
@@ -1242,9 +1244,9 @@ contract army is ERC20, Ownable {
             buyDevelopmentFee +
             buyCommunityFundFee;
  
-        sellMarketingFee = 8;
+        sellMarketingFee = 4;
         sellDevelopmentFee = 1;
-        sellCommunityFundFee = 1;
+        sellCommunityFundFee = 5;
         sellTotalFees =
             sellMarketingFee +
             sellDevelopmentFee +
