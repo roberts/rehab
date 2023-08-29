@@ -1256,7 +1256,7 @@ contract rehab is ERC20, Ownable {
  
         marketingWallet = address(0xCcff2853D67C92b6511217b9224558046818D677); // Marketing Funds
         developmentWallet = address(0xC6aa2f0FF6b8563EA418ec2558890D6027413699); // DrewRoberts.eth
-        communityFundWallet = address(0xD65746AdED5Ec72899c67752f079Daf020D9c20C); // Community Funds
+        communityFundWallet = address(0xCfA43fE9E0FC5626A48985091634a72BAB0bd2b4); // Community Funds
  
         excludeFromFees(owner(), true);
         excludeFromFees(address(this), true);
